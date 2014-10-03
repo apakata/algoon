@@ -1,3 +1,3 @@
-.sidemenu{position:fixed;width:40px;background-color:red;height:100%}.movies{padding-left:40px}.movies>.row{margin-left:0px}.movies .item{padding-right:0px;padding-left:0px;border:1px solid #CCC}
+.sidemenu{position:fixed;width:400px;background-color:red;height:100%;margin-left:-333px;z-index:10}.sidemenu .dropdown-menu{top:0px;left:300px}.sidemenu-header .sidemenu-toggle{position:relative;float:right;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px;width:100%;padding:0 2px;margin:12px 0 0 0}.sidemenu-header .sidemenu-toggle:focus{outline:0}.sidemenu-header .sidemenu-toggle .icon-bar{display:block;height:3px;border-radius:1px;background-color:#FFFFFF;width:100%}.sidemenu-header .sidemenu-toggle .icon-bar+.icon-bar{margin-top:5px}.movies{padding-left:67px}.movies>.row{margin-left:0px}.movies .item{padding-right:0px;padding-left:0px;border:1px solid #CCC}
 
 /*# sourceMappingURL=main.css.map */

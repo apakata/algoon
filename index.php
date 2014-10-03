@@ -23,16 +23,81 @@
 		<![endif]-->
 
 		<nav class="sidemenu">
-			<ul class="nav nav-pills">
-				<li>d</li>
-				<li>d</li>
-			</ul>
+			
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-10">
+						<!-- Logo -->
+						<div class="row">
+							<div class="col-md-12">
+								logo
+							</div>
+						</div>
+
+						<!-- Search Box -->
+						<div class="row">
+							<div class="col-md-12">
+								<input class="form-control" type="text"></input>
+							</div>
+						</div>
+
+						<!-- Sosmed -->
+						<div class="row">
+							<div class="col-md-12">
+								FB dkk
+							</div>
+						</div>
+
+						<!-- Menu -->
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="nav nav-pills nav-stacked">
+									<li class="active"><a href="#">Home</a></li>
+									<li><a href="#">Profile</a></li>
+									<li><a href="#">Messages</a></li>
+									<li class="dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+										Dropdown <span class="caret"></span>
+										</a>
+										<ul class="dropdown-menu" role="menu">
+											<li class="active"><a href="#">Home</a></li>
+											<li class="dropdown">
+												<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+												Dropdown <span class="caret"></span>
+												</a>
+												<ul class="dropdown-menu" role="menu">
+													<li class="active"><a href="#">Home</a></li>
+													<li><a href="#">Profile</a></li>
+													<li><a href="#">Messages</a></li>
+												</ul>
+											</li>
+											<li><a href="#">Profile</a></li>
+											<li><a href="#">Messages</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>	
+
+					</div>
+					<div class="col-md-2">
+						<div class="sidemenu-header">
+							<button type="button" class="sidemenu-toggle" id="menu">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</nav>
 		
 		<div class="container-fluid movies">
 			<div class="row">
 				<?php for ($i=0; $i < 12; $i++) { ?>
-				<div class="col-sm-3 col-md-2 col-lg-2 item">
+				<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 item">
 					<img src="images/box.png" class="img-responsive">
 				</div>
 				<?php }?>

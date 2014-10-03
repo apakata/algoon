@@ -1,0 +1,14 @@
+.movies {
+
+	padding-left: $menu-toggle-width;
+
+	& > .row {
+		margin-left: 0px;
+	}
+
+	.item {
+		padding-right: 0px;
+		padding-left: 0px;
+		border: 1px solid #CCC;
+	}
+}

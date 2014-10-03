@@ -1,21 +1,3 @@
-.sidemenu {
-	position: fixed;
-	width: 40px;
-	background-color: red;
-	height: 100%;
-}
-
-.movies {
-
-	padding-left: 40px;
-
-	& > .row {
-		margin-left: 0px;
-	}
-
-	.item {
-		padding-right: 0px;
-		padding-left: 0px;
-		border: 1px solid #CCC;
-	}
-}
+@import 'variable';
+@import 'menu';
+@import 'movies';
