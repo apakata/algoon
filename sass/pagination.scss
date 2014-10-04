@@ -1,0 +1,58 @@
+.paging {
+
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	width: auto;
+
+	.pagination {
+		& > .active {
+			& > a,
+			& > span,
+			& > a:hover,
+			& > span:hover,
+			& > a:focus,
+			& > span:focus {
+				background-color: #222222;
+				
+				border-right-color: #333;
+				border-left-color: #333;
+				border-top-color: #222;
+				border-bottom-color:#222;
+				color: #FFFFFF;
+			}
+		}
+
+		& > .disabled {
+			& > a,
+			& > span,
+			& > a:hover,
+			& > span:hover,
+			& > a:focus,
+			& > span:focus {
+				color: #777 !important;
+			}
+		}
+
+		& > li {
+			& > a, 
+			& > span {
+				color: #333333;
+			}
+
+			&:last-child > a,
+			&:last-child > span {
+				background-color: #222222;
+				border-color: #222222;
+				color: #FFFFFF;
+			}
+
+			&:first-child > a,
+			&:first-child > span {
+				background-color: #222222;
+				border-color: #222222;
+				color: #FFFFFF;
+			}
+		}
+	}
+}

@@ -1,3 +1,15 @@
-@import 'variable';
+
+/**
+ * Menu variabel ada disini
+ */
+$menu-toggle-width: 67px;
+$menu-full-width: 400px;
+$menu-color: #222;
+
+/**
+ * Movies variabel ada disini
+ */
+
 @import 'menu';
 @import 'movies';
+@import 'pagination';
