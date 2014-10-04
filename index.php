@@ -27,14 +27,18 @@
 
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-10 content">
+					<div class="col-xs-10 content">
 						<!-- Logo -->
 						<div class="row header">
 							<div class="col-md-4">
+								<a href="#">
 								<span class="glyphicon glyphicon-search logo"></span>
+								</a>
 							</div>
-							<div class="col-md-8">
-								<span class="logo-title">Website Name </span>
+							<div class="col-md-8 logo-title">
+								<a href="#">
+								<span class="text">Website Name </span>
+								</a>
 							</div>
 						</div>
 
@@ -49,14 +53,20 @@
 
 						<!-- Sosmed -->
 						<div class="row text-center sosmed">
-							<div class="col-md-4">
-								<span class="glyphicon glyphicon-adjust item"></span>
+							<div class="col-xs-4">
+								<a href="#">
+									<span class="glyphicon glyphicon-adjust item"></span>
+								</a>
 							</div>
-							<div class="col-md-4">
+							<div class="col-xs-4">
+								<a href="#">
 								<span class="glyphicon glyphicon-pause item"></span>
+								</a>
 							</div>
-							<div class="col-md-4">
+							<div class="col-xs-4">
+								<a href="#">
 								<span class="glyphicon glyphicon-resize-full item"></span>
+								</a>
 							</div>
 						</div>
 
@@ -100,7 +110,7 @@
 
 					</div>
 
-					<div class="col-md-2 trigger">
+					<div class="col-xs-2 trigger">
 						<div class="sidemenu-header">
 							<button type="button" class="sidemenu-toggle" id="menu">
 								<span class="icon-bar"></span>
@@ -117,7 +127,9 @@
 			<div class="row">
 				<?php for ($i=0; $i < 18; $i++) { ?>
 				<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 item">
-					<img src="images/box.png" class="img-responsive">
+					<a href="#">
+						<img src="images/box.png" class="img-responsive">
+					</a>
 				</div>
 				<?php }?>
 			</div>
