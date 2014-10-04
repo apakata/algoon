@@ -14,6 +14,91 @@
 		top: 0px;
 		left: 300px;
 	}
+
+	& > .container-fluid {
+		height: 100%;
+
+		& > .row {
+			height: 100%;
+		}
+	}
+
+	.content {
+
+		height: 100%;
+
+		.row.header {
+			
+			margin: 20px 0;
+
+			.logo {
+				font-size: 80px;
+				color: #FFFFFF;
+			}
+
+			.logo-title {
+				font-size: 50px;
+				
+				line-height: 35px;
+				color: #FFFFFF;
+			}
+		}
+
+		.row.search {
+			.form-control {
+				border-radius: 0px;
+			}
+		}
+
+		.row.sosmed {
+
+			margin: 20px 0;
+
+			.item {
+				color: #FFF;
+				font-size: 20px;
+			}
+
+		}
+
+		.row.menu {
+
+			& > div {
+				padding: 0px;
+			}
+
+			.nav-pills {
+				&>li {
+					&>a {
+						border-radius: 0px;
+						color: #FFFFFF;
+
+						&:hover {
+							background-color: #333333;
+							
+						}
+					}
+
+					&.active>a {
+						background-color: #333333;
+					}
+				}
+			}
+		}
+
+		.row.footer {
+			position: absolute;
+			bottom: 0px;
+			color: #FFFFFF;
+			width: 100%;
+			margin: 0 0 20px 0;
+		}
+	}
+
+	.trigger {
+		height: 100%;
+		background-color: #111111;
+	}
 }
 
 .sidemenu-header {
@@ -28,7 +113,7 @@
 
 		width: 100%;
 		padding: 0 2px;
-		margin: 12px 0 0 0;
+		margin: 20px 0 0 0;
 
 		&:focus {
 			outline: 0;

@@ -27,30 +27,41 @@
 
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-10">
+					<div class="col-md-10 content">
 						<!-- Logo -->
-						<div class="row">
-							<div class="col-md-12">
-								logo
+						<div class="row header">
+							<div class="col-md-4">
+								<span class="glyphicon glyphicon-search logo"></span>
+							</div>
+							<div class="col-md-8">
+								<span class="logo-title">Website Name </span>
 							</div>
 						</div>
 
 						<!-- Search Box -->
-						<div class="row">
+						<div class="row search">
 							<div class="col-md-12">
-								<input class="form-control" type="text"></input>
+								<form>
+									<input class="form-control" type="text" placeholder="Search"/>
+								</form>
 							</div>
 						</div>
 
 						<!-- Sosmed -->
-						<div class="row">
-							<div class="col-md-12">
-								FB dkk
+						<div class="row text-center sosmed">
+							<div class="col-md-4">
+								<span class="glyphicon glyphicon-adjust item"></span>
+							</div>
+							<div class="col-md-4">
+								<span class="glyphicon glyphicon-pause item"></span>
+							</div>
+							<div class="col-md-4">
+								<span class="glyphicon glyphicon-resize-full item"></span>
 							</div>
 						</div>
 
 						<!-- Menu -->
-						<div class="row">
+						<div class="row menu">
 							<div class="col-md-12">
 								<ul class="nav nav-pills nav-stacked">
 									<li class="active"><a href="#">Home</a></li>
@@ -80,8 +91,16 @@
 							</div>
 						</div>	
 
+						<!-- Footer -->
+						<div class="row footer">
+							<div class="col-md-12 text-center">
+								Site Footer
+							</div>
+						</div>
+
 					</div>
-					<div class="col-md-2">
+
+					<div class="col-md-2 trigger">
 						<div class="sidemenu-header">
 							<button type="button" class="sidemenu-toggle" id="menu">
 								<span class="icon-bar"></span>
@@ -96,7 +115,7 @@
 		
 		<div class="container-fluid movies">
 			<div class="row">
-				<?php for ($i=0; $i < 12; $i++) { ?>
+				<?php for ($i=0; $i < 18; $i++) { ?>
 				<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 item">
 					<img src="images/box.png" class="img-responsive">
 				</div>
