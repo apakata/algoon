@@ -30,8 +30,12 @@ function algoon_styles_and_scripts() {
 	wp_enqueue_script( 'main',		get_template_directory_uri() . '/scripts/main.js', array('bootstrap'), '1.0',TRUE);
 }
 
+
 /**
+ * =======================================
  * Include separate libraries or functions
+ * =======================================
  */
+
 // http://www.intert3chmedia.net/2011/12/minify-html-javascript-css-without.html
 require get_template_directory() . '/inc/minifier-script-en.php'; 

@@ -18,7 +18,7 @@ get_header(); ?>
 		?>
 
 		<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 item">
-			<a href="<?php the_permalink(); ?> ">
+			<a href="<?php esc_url( the_permalink() ); ?> ">
 				
 				<?php 
 	
@@ -36,9 +36,9 @@ get_header(); ?>
 			</a>
 
 			<div class="title text-center">
-				<a href="<?php the_permalink(); ?>">
+				<a href="<?php esc_url( the_permalink() ); ?>">
 
-				<?php the_title('<h2>','</h2>'); ?>
+				<?php the_title('<h3>','</h3>'); ?>
 				</a>
 			</div>
 		</div>
