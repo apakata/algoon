@@ -22,9 +22,46 @@ $('#menu').click(function(event) {
 });
 
 $('.movies .item').hover(function() {
-	var $item = $(this);
-	$item.children('.title').show();
+	$(this).children('.title').show();
 }, function() {
-	var $item = $(this);
-	$item.children('.title').hide();
+	$(this).children('.title').hide();
+});
+
+$(function() {
+
+	var $item = $('.movies .item'),
+		ratio = 0.7,
+		itemWidth = $item.width(),
+		itemHeight = itemWidth / ratio;
+
+	$item.each(function(index) {
+		var $img = $(this).children('img'),
+			imgWidth = $img.attr('width'),
+			imgHeight = $img.attr('height'),
+			imgRatio = imgWidth/imgHeight,
+			emptySpace, margin;
+
+		$(this).height(itemHeight);
+
+		// Jika lebih lebar maka 
+		// lebarnya disesuiakan dg box
+		if ((imgWidth/imgHeight) > ratio) {
+			emptySpace = itemHeight - imgHeight;
+			margin = emptySpace/2;
+			console.log(emptySpace);
+
+			console.log(imgWidth);
+			$img.width(itemWidth);
+			$img.height(itemWidth/imgRatio);
+			
+
+		} else
+		// Jika lebih tinggi maka 
+		// tinggignyad desesuiakan dengan box
+		if ((imgWidth/imgHeight) <= ratio) {
+			$img.height(itemHeight);
+			$img.width(itemHeight/imgRatio);
+		};
+
+	})
 });

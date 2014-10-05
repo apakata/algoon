@@ -18,13 +18,12 @@ get_header(); ?>
 		?>
 
 		<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 item">
-			<a href="<?php esc_url( the_permalink() ); ?> ">
 				
 				<?php 
 	
 				// Get the post featured image
 				if ( has_post_thumbnail() ) {
-					the_post_thumbnail( 'medium', array(
+					the_post_thumbnail( 'large', array(
 						'class'	=> 'img-responsive'
 					) ); 
 				} else {
@@ -33,7 +32,6 @@ get_header(); ?>
 	
 				?> 
 
-			</a>
 
 			<div class="title text-center">
 				<a href="<?php esc_url( the_permalink() ); ?>">

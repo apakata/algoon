@@ -38,4 +38,4 @@ function algoon_styles_and_scripts() {
  */
 
 // http://www.intert3chmedia.net/2011/12/minify-html-javascript-css-without.html
-require get_template_directory() . '/inc/minifier-script-en.php'; 
+//require get_template_directory() . '/inc/minifier-script-en.php'; 
