@@ -1,13 +1,13 @@
 /** Menu variabel ada disini */
 /** Movies variabel ada disini */
-.sidemenu { position: fixed; width: 400px; background-color: #111111; height: 100%; margin-left: -333px; z-index: 10; /**  Multi level dropdown menu http://bootsnipp.com/snippets/featured/multi-level-dropdown-menu-bs3 */ }
+.sidemenu { position: fixed; width: 300px; background-color: #111111; height: 100%; margin-left: -250px; z-index: 10; /**  Multi level dropdown menu http://bootsnipp.com/snippets/featured/multi-level-dropdown-menu-bs3 */ }
 .sidemenu > .container-fluid { height: 100%; }
 .sidemenu > .container-fluid > .row { height: 100%; }
 .sidemenu .content { height: 100%; }
 .sidemenu .content .row.header { margin: 20px 0; }
-.sidemenu .content .row.header .logo { font-size: 80px; color: #FFFFFF; }
+.sidemenu .content .row.header .logo { font-size: 40px; color: #FFFFFF; }
 .sidemenu .content .row.header .logo-title a { text-decoration: none; }
-.sidemenu .content .row.header .logo-title .text { font-size: 50px; line-height: 35px; color: #FFFFFF; }
+.sidemenu .content .row.header .logo-title .text { font-size: 40px; line-height: 35px; color: #FFFFFF; }
 .sidemenu .content .row.search .form-control { border-radius: 0px; }
 .sidemenu .content .row.sosmed { margin: 20px 0; }
 .sidemenu .content .row.sosmed .item { color: #FFF; font-size: 20px; }
@@ -16,7 +16,7 @@
 .sidemenu .content .row.menu .nav-pills > li > a:hover { background-color: #333333; }
 .sidemenu .content .row.menu .nav-pills > li.active > a { background-color: #333333; }
 .sidemenu .content .row.footer { position: absolute; bottom: 0px; color: #FFFFFF; width: 100%; margin: 0 0 20px 0; }
-.sidemenu .trigger { height: 100%; background-color: #111111; }
+.sidemenu .trigger { height: 100%; background-color: #111111; padding: 0 8px; }
 
 .sidemenu-header .sidemenu-toggle { position: relative; float: right; background-color: transparent; background-image: none; border: 1px solid transparent; border-radius: 4px; width: 100%; padding: 0 2px; margin: 20px 0 0 0; }
 .sidemenu-header .sidemenu-toggle:focus { outline: 0; }
@@ -33,15 +33,16 @@
 .dropdown-submenu.pull-left { float: none; }
 .dropdown-submenu.pull-left > .dropdown-menu { left: -100%; margin-left: 10px; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; }
 
-.movies { padding-left: 67px; }
+.movies { padding-left: 50px; }
 .movies > .row { margin-left: 0px; }
 .movies .item { padding-right: 0px; padding-left: 0px; }
 
-.paging { position: fixed; right: 20px; bottom: 10px; width: auto; }
+.paging { position: fixed; right: 0px; bottom: 0px; width: auto; }
+.paging .pagination { margin: 0px 0px -5px 0px; }
 .paging .pagination > .active > a, .paging .pagination > .active > span, .paging .pagination > .active > a:hover, .paging .pagination > .active > span:hover, .paging .pagination > .active > a:focus, .paging .pagination > .active > span:focus { background-color: #222222; border-right-color: #333; border-left-color: #333; border-top-color: #222; border-bottom-color: #222; color: #FFFFFF; }
 .paging .pagination > .disabled > a, .paging .pagination > .disabled > span, .paging .pagination > .disabled > a:hover, .paging .pagination > .disabled > span:hover, .paging .pagination > .disabled > a:focus, .paging .pagination > .disabled > span:focus { color: #777 !important; }
 .paging .pagination > li > a, .paging .pagination > li > span { color: #333333; }
-.paging .pagination > li:last-child > a, .paging .pagination > li:last-child > span { background-color: #222222; border-color: #222222; color: #FFFFFF; }
-.paging .pagination > li:first-child > a, .paging .pagination > li:first-child > span { background-color: #222222; border-color: #222222; color: #FFFFFF; }
+.paging .pagination > li:last-child > a, .paging .pagination > li:last-child > span { background-color: #222222; border-color: #222222; color: #FFFFFF; border-radius: 0px; }
+.paging .pagination > li:first-child > a, .paging .pagination > li:first-child > span { background-color: #222222; border-color: #222222; color: #FFFFFF; border-radius: 0px; }
 
 /*# sourceMappingURL=main.css.map */
