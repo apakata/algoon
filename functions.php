@@ -28,7 +28,4 @@ function algoon_styles_and_scripts() {
 	wp_enqueue_script( 'bootstrap',	get_template_directory_uri() . '/packages/bootstrap/js/bootstrap.min.js', array(), '2.6.2',TRUE);
 	wp_enqueue_script( 'plugins',	get_template_directory_uri() . '/scripts/plugins.js', array(), '1.0',TRUE);
 	wp_enqueue_script( 'main',		get_template_directory_uri() . '/scripts/main.js', array('bootstrap'), '1.0',TRUE);
-
-
-
 }

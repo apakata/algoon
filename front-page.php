@@ -8,12 +8,46 @@ get_header(); ?>
 
 <div class="container-fluid movies">
 	<div class="row">
-		<?php for ($i=0; $i < 18; $i++) { ?>
+
+		<?php
+	
+		// Special wordpress loop
+		// Begin
+		if ( have_posts() ) :
+			while ( have_posts() ) : the_post(); 
+		?>
+
 		<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 item">
-			<a href="#">
-				<img src="images/box.png" class="img-responsive">
+			<a href="<?php the_permalink(); ?> ">
+				
+				<?php 
+	
+				// Get the post featured image
+				if ( has_post_thumbnail() ) {
+					the_post_thumbnail( 'medium', array(
+						'class'	=> 'img-responsive'
+					) ); 
+				} else {
+					# to do some action ...
+				}
+	
+				?> 
+
 			</a>
 		</div>
+					
+		<?php 
+			endwhile;
+		else :
+			// If no content, include the "No posts found" template.
+			get_template_part( 'content', 'none' );
+		endif;
+		// Special wordpress loop
+		// /End
+		?>
+
+		<?php for ($i=0; $i < 18; $i++) { ?>
+		
 		<?php }?>
 	</div>
 </div>
