@@ -23,6 +23,7 @@
 	.content {
 
 		height: 100%;
+		width: $menu-full-width - $menu-toggle-width;
 
 		.row.header {
 			
@@ -105,7 +106,8 @@
 	.trigger {
 		height: 100%;
 		background-color: $menu-color-1;
-		padding: 0 8px;
+		padding: 0 4px;
+		width: $menu-toggle-width;
 	}
 }
 
@@ -136,7 +138,7 @@
 			width: 100%;
 
 			& + .icon-bar {
-				margin-top: 5px;			
+				margin-top: 4px;			
 			}
 		}
 	}

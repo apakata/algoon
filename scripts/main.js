@@ -1,4 +1,4 @@
-var menuToggleWidth = 50,
+var menuToggleWidth = 40,
 	menuFullWidth = 300;
 
 $('#menu').click(function(event) {

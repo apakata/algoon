@@ -34,6 +34,10 @@ get_header(); ?>
 				?> 
 
 			</a>
+
+			<div class="title text-center">
+				<?php the_title(); ?>
+			</div>
 		</div>
 					
 		<?php 

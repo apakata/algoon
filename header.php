@@ -136,7 +136,7 @@
 
 					</div>
 
-					<div class="col-xs-2 trigger">
+					<div class="col-xs-2 pull-right trigger">
 						<div class="sidemenu-header">
 							<button type="button" class="sidemenu-toggle" id="menu">
 								<span class="icon-bar"></span>
