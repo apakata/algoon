@@ -12,7 +12,6 @@
 			
 		<link rel="stylesheet" href="packages/bootstrap/css/bootstrap.min.css">
 		
-		<link rel="stylesheet" href="packages/bootstrap/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="styles/main.css">
 
 		<script src="scripts/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -37,7 +36,7 @@
 							</div>
 							<div class="col-md-8 logo-title">
 								<a href="#">
-								<span class="text">Website Name </span>
+								<span class="text">Algoon </span>
 								</a>
 							</div>
 						</div>
@@ -46,7 +45,7 @@
 						<div class="row search">
 							<div class="col-md-12">
 								<form>
-									<input class="form-control" type="text" placeholder="Search"/>
+									<input class="form-control" type="text" placeholder="Search Box">
 								</form>
 							</div>
 						</div>
