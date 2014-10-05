@@ -73,28 +73,53 @@
 						<!-- Menu -->
 						<div class="row menu">
 							<div class="col-md-12">
-								<ul class="nav nav-pills nav-stacked">
+								<ul class="nav nav-pills nav-stacked multi-level">
 									<li class="active"><a href="#">Home</a></li>
-									<li><a href="#">Profile</a></li>
-									<li><a href="#">Messages</a></li>
-									<li class="dropdown">
+									<li><a href="#">Box Office</a></li>
+									<li><a href="#">Most Popular</a></li>
+									<li class="dropdown-submenu">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-										Dropdown <span class="caret"></span>
+										Categories
 										</a>
 										<ul class="dropdown-menu" role="menu">
-											<li class="active"><a href="#">Home</a></li>
-											<li class="dropdown">
+											<li class="dropdown-submenu">
 												<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-												Dropdown <span class="caret"></span>
+												Movies 
 												</a>
 												<ul class="dropdown-menu" role="menu">
-													<li class="active"><a href="#">Home</a></li>
-													<li><a href="#">Profile</a></li>
-													<li><a href="#">Messages</a></li>
+													<li class="dropdown-submenu">
+														<a href="#" class="dropdown-toggle">By Quality</a>
+														<ul class="dropdown-menu" role="menu">
+															<li>
+																<a href="#">BrRip</a>
+															</li>
+															<li>
+																<a href="#">BrRip</a>
+															</li>
+															<li>
+																<a href="#">BrRip</a>
+															</li>
+															<li>
+																<a href="#">BrRip</a>
+															</li>
+															<li>
+																<a href="#">BrRip</a>
+															</li>
+															<li>
+																<a href="#">BrRip</a>
+															</li>
+															<li>
+																<a href="#">BrRip</a>
+															</li>
+														</ul>
+													</li>
+													<li><a href="#">By Genre</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Profile</a></li>
-											<li><a href="#">Messages</a></li>
+											<li class=""><a href="#">Games</a></li>
+											<li class=""><a href="#">Anime</a></li>
+											<li class=""><a href="#">Manga</a></li>
+											
 										</ul>
 									</li>
 								</ul>
