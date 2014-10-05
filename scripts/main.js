@@ -20,3 +20,11 @@ $('#menu').click(function(event) {
 		});
 	};
 });
+
+$('.movies .item').hover(function() {
+	var $item = $(this);
+	$item.children('.title').show();
+}, function() {
+	var $item = $(this);
+	$item.children('.title').hide();
+});

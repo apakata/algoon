@@ -36,7 +36,10 @@ get_header(); ?>
 			</a>
 
 			<div class="title text-center">
-				<?php the_title(); ?>
+				<a href="<?php the_permalink(); ?>">
+
+				<?php the_title('<h2>','</h2>'); ?>
+				</a>
 			</div>
 		</div>
 					

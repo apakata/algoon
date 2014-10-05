@@ -36,9 +36,9 @@
 .movies { padding-left: 40px; }
 .movies > .row { margin-left: 0px; }
 .movies .item { padding-right: 0px; padding-left: 0px; }
-.movies .item a:hover + .title { display: block; }
-.movies .item a:focus + .title { display: block; }
 .movies .item .title { position: absolute; bottom: 0px; width: 100%; height: 100%; color: #FFFFFF; background-color: #444444; opacity: 0.7; display: none; }
+.movies .item .title a { text-decoration: none; color: #FFFFFF; }
+.movies .item .title h2 { position: absolute; bottom: 20px; width: 100%; }
 
 .paging { position: fixed; right: 0px; bottom: 0px; width: auto; }
 .paging .pagination { margin: 0px 0px -5px 0px; }
