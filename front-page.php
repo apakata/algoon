@@ -27,7 +27,7 @@ get_header(); ?>
 						'class'	=> 'img-responsive'
 					) ); 
 				} else {
-					# to do some action ...
+					echo "<img src='".algoon_first_img()."' class='img-responsive' alt='' />";
 				}
 	
 				?> 

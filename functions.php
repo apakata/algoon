@@ -30,6 +30,29 @@ function algoon_styles_and_scripts() {
 	wp_enqueue_script( 'main',		get_template_directory_uri() . '/scripts/main.js', array('bootstrap'), '1.0',TRUE);
 }
 
+/**
+ * Grap the first image to display like a post thumbnail
+ * @source http://css-tricks.com/snippets/wordpress/get-the-first-image-from-a-post/
+ * @return [string] [image link]
+ */
+function algoon_first_img()
+{
+	global $post, $posts;
+
+	$first_img = '';
+	
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches[1][0];
+
+	if(empty($first_img)) {
+		$first_img = "/path/to/default.png";
+	}
+	
+	return $first_img;
+}
+
 
 /**
  * =======================================
