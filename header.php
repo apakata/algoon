@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Algoon</title>
+		<title><?php echo get_option('blogname'); ?></title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 			
@@ -32,13 +32,13 @@
 						<!-- Logo -->
 						<div class="row header">
 							<div class="col-md-4">
-								<a href="#">
+								<a href="<?php echo get_option('home'); ?>">
 								<span class="glyphicon glyphicon-search logo"></span>
 								</a>
 							</div>
 							<div class="col-md-8 logo-title">
-								<a href="#">
-								<span class="text">Algoon </span>
+								<a href="<?php echo get_option('home'); ?>">
+								<span class="text"><?php echo get_option('blogname'); ?></span>
 								</a>
 							</div>
 						</div>
