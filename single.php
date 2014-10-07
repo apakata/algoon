@@ -2,9 +2,16 @@
 
 get_header(); 
 
+
 ?>
 <div class="container-fluid movies">
 	<div class="row">
+		<div class="col-md-3">
+			<?php get_sidebar('left'); ?>
+		</div>
+		<div class="col-md-6">
+			
+		
 <?php
 // Start the Loop.
 while ( have_posts() ) : the_post();
@@ -19,6 +26,12 @@ while ( have_posts() ) : the_post();
 	}
 endwhile;
 			?>
+		</div>
+		<div class="col-md-3">
+			<?php get_sidebar('right'); ?>
+		</div>
 	</div>
 </div>
-<?php get_footer(); ?>
+<?php 
+
+get_footer(); ?>
