@@ -10,11 +10,13 @@ get_header(); ?>
 	<div class="row">
 
 		<?php
-	
-		// Special wordpress loop
-		// Begin
-		if ( have_posts() ) :
-			while ( have_posts() ) : the_post(); 
+
+		$query = new WP_Query( array(
+			'posts_per_page'	=> get_option('posts_per_page')
+		) );
+
+		if ( $query->have_posts() ) :
+			while ( $query->have_posts() ) : $query->the_post(); 
 		?>
 
 		<div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 item">
@@ -27,6 +29,8 @@ get_header(); ?>
 						'class'	=> 'img-responsive'
 					) ); 
 				} else {
+
+					// Get first image from content post
 					echo "<img src='".algoon_first_img()."' class='img-responsive' alt='' />";
 				}
 	
@@ -35,8 +39,7 @@ get_header(); ?>
 
 			<div class="title text-center">
 				<a href="<?php esc_url( the_permalink() ); ?>">
-
-				<?php the_title('<h3>','</h3>'); ?>
+					<?php the_title('<h3>','</h3>'); ?>
 				</a>
 			</div>
 		</div>
@@ -49,11 +52,9 @@ get_header(); ?>
 		endif;
 		// Special wordpress loop
 		// /End
-		?>
-
-		<?php for ($i=0; $i < 18; $i++) { ?>
 		
-		<?php }?>
+		wp_reset_postdata(); ?>
+
 	</div>
 </div>
 
