@@ -31,12 +31,12 @@
 					<div class="col-xs-10 content">
 						<!-- Logo -->
 						<div class="row header">
-							<div class="col-md-4">
+							<div class="col-md-3">
 								<a href="<?php echo get_option('home'); ?>">
 								<span class="glyphicon glyphicon-search logo"></span>
 								</a>
 							</div>
-							<div class="col-md-8 logo-title">
+							<div class="col-md-9 logo-title">
 								<a href="<?php echo get_option('home'); ?>">
 								<span class="text"><?php echo get_option('blogname'); ?></span>
 								</a>
@@ -75,56 +75,6 @@
 						<div class="row menu">
 							<div class="col-md-12">
 								<?php echo generate_navigation(); ?>
-								<!-- <ul class="nav nav-pills nav-stacked multi-level">
-									<li class="active"><a href="#">Home</a></li>
-									<li><a href="#">Box Office</a></li>
-									<li><a href="#">Most Popular</a></li>
-									<li class="dropdown-submenu">
-										<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-										Categories
-										</a>
-										<ul class="dropdown-menu" role="menu">
-											<li class="dropdown-submenu">
-												<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-												Movies 
-												</a>
-												<ul class="dropdown-menu" role="menu">
-													<li class="dropdown-submenu">
-														<a href="#" class="dropdown-toggle">By Quality</a>
-														<ul class="dropdown-menu" role="menu">
-															<li>
-																<a href="#">BrRip</a>
-															</li>
-															<li>
-																<a href="#">BrRip</a>
-															</li>
-															<li>
-																<a href="#">BrRip</a>
-															</li>
-															<li>
-																<a href="#">BrRip</a>
-															</li>
-															<li>
-																<a href="#">BrRip</a>
-															</li>
-															<li>
-																<a href="#">BrRip</a>
-															</li>
-															<li>
-																<a href="#">BrRip</a>
-															</li>
-														</ul>
-													</li>
-													<li><a href="#">By Genre</a></li>
-												</ul>
-											</li>
-											<li class=""><a href="#">Games</a></li>
-											<li class=""><a href="#">Anime</a></li>
-											<li class=""><a href="#">Manga</a></li>
-											
-										</ul>
-									</li>
-								</ul> -->
 							</div>
 						</div>	
 

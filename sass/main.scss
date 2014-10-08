@@ -13,6 +13,10 @@ $menu-color-4: #444;
  * Movies variabel ada disini
  */
 
+body {
+	background-color: $menu-color-3;
+}
+
 @import 'menu';
 @import 'movies';
 @import 'pagination';

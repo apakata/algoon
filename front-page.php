@@ -49,7 +49,7 @@ get_header(); ?>
 		<?php 
 			endwhile;
 			
-			//algoon_paging_nav();
+			algoon_paging_nav();
 		else :
 			// If no content, include the "No posts found" template.
 			get_template_part( 'content', 'none' );
