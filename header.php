@@ -74,7 +74,8 @@
 						<!-- Menu -->
 						<div class="row menu">
 							<div class="col-md-12">
-								<ul class="nav nav-pills nav-stacked multi-level">
+								<?php echo generate_navigation(); ?>
+								<!-- <ul class="nav nav-pills nav-stacked multi-level">
 									<li class="active"><a href="#">Home</a></li>
 									<li><a href="#">Box Office</a></li>
 									<li><a href="#">Most Popular</a></li>
@@ -123,7 +124,7 @@
 											
 										</ul>
 									</li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>	
 

@@ -48,19 +48,22 @@ get_header(); ?>
 					
 		<?php 
 			endwhile;
+			
+			//algoon_paging_nav();
 		else :
 			// If no content, include the "No posts found" template.
 			get_template_part( 'content', 'none' );
 		endif;
 		// Special wordpress loop
 		// /End
-		
+		// 
 		wp_reset_postdata(); ?>
 
 	</div>
 </div>
 
 <div class="paging">
+	<?php ?>
 	<ul class="pagination">
 		<li class="disabled"><a href="#">Previous</a></li>
 		<li class="active"><a href="#">1</a></li>
