@@ -14,7 +14,15 @@
 		padding-right: 0px;
 		padding-left: 0px;
 
-		
+		.text {
+			position: absolute;
+			bottom: 0px;
+			width: 100%;
+			padding: 10px;
+			background-color: $menu-color-4;
+			opacity: 0.7;
+			color: #FFFFFF;
+		}
 
 		.title {
 			position: absolute;
