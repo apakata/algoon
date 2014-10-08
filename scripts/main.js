@@ -36,8 +36,10 @@ $(function() {
 
 	$item.each(function(index) {
 		var $img = $(this).children('img'),
-			imgWidth = $img.attr('width'),
-			imgHeight = $img.attr('height'),
+			// imgWidth = $img.attr('width'),
+			// imgHeight = $img.attr('height'),
+			imgWidth = $img.width(),
+			imgHeight = $img.height(),
 			imgRatio = imgWidth/imgHeight,
 			emptySpace, margin;
 
