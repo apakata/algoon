@@ -52,3 +52,19 @@
 		
 	}
 }
+
+.widget {
+	color: #FFFFFF;
+
+	.sidewidget {
+		border: 1px solid #CCCCCC;
+		padding: 10px 15px;
+		margin: 15px 5px;
+		background-color: #777777;
+	}
+
+	h3 {
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+}

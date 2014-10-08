@@ -127,8 +127,32 @@ function algoon_widget_footer() {
 		'id' => 'footer-sidebar',
 		'before_widget' => '<div>',
 		'after_widget' => '</div>',
-		'before_title' => '<span>',
+		'before_title' => '<span class="hide">',
 		'after_title' => '</span>',
+	) );
+}
+
+add_action( 'widgets_init', 'algoon_widget_right' );
+function algoon_widget_right() {
+	register_sidebar( array(
+		'name' => 'Right Sidebar',
+		'id' => 'right-widget',
+		'before_widget' => '<div class="sidewidget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	) );
+}
+
+add_action( 'widgets_init', 'algoon_widget_left' );
+function algoon_widget_left() {
+	register_sidebar( array(
+		'name' => 'Left Sidebar',
+		'id' => 'left-widget',
+		'before_widget' => '<div class="sidewidget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
 	) );
 }
 
