@@ -81,7 +81,7 @@
 						<!-- Footer -->
 						<div class="row footer">
 							<div class="col-md-12 text-center">
-								Site Footer
+								<?php dynamic_sidebar( 'footer-sidebar' ); ?>
 							</div>
 						</div>
 

@@ -120,6 +120,18 @@ function algoon_regiser_menu() {
   register_nav_menu('main-menu',__( 'Main Menu' ));
 }
 
+add_action( 'widgets_init', 'algoon_widget_footer' );
+function algoon_widget_footer() {
+	register_sidebar( array(
+		'name' => 'Footer Sidebar',
+		'id' => 'footer-sidebar',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<span>',
+		'after_title' => '</span>',
+	) );
+}
+
 
 /**
  * =======================================
