@@ -10,9 +10,10 @@ get_header(); ?>
 	<div class="row">
 
 		<?php
-
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		$query = new WP_Query( array(
-			'posts_per_page'	=> get_option('posts_per_page')
+			'posts_per_page'	=> get_option('posts_per_page'),
+			'paged'				=> $paged
 		) );
 
 		if ( $query->have_posts() ) :
@@ -57,7 +58,7 @@ get_header(); ?>
 		// Special wordpress loop
 		// /End
 		// 
-		wp_reset_postdata(); ?>
+		//wp_reset_postdata(); ?>
 
 	</div>
 </div>
