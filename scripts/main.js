@@ -35,35 +35,47 @@ $(function() {
 		itemHeight = itemWidth / ratio;
 
 	$item.each(function(index) {
-		var $img = $(this).children('img'),
-			// imgWidth = $img.attr('width'),
-			// imgHeight = $img.attr('height'),
-			imgWidth = $img.width(),
-			imgHeight = $img.height(),
-			imgRatio = imgWidth/imgHeight,
-			emptySpace, margin;
+		var $img 		= $(this).children('img'),
+			imgWidth 	= $img.width(),
+			imgHeight 	= $img.height(),
+			margin;
 
 		$(this).height(itemHeight);
 
-		// Jika lebih lebar maka 
-		// lebarnya disesuiakan dg box
 		if ((imgWidth/imgHeight) > ratio) {
-			emptySpace = itemHeight - imgHeight;
-			margin = emptySpace/2;
-			console.log(emptySpace);
 
-			console.log(imgWidth);
+			// set image height full box
+			$img.height(itemHeight);
+
+			var $newImg = $(this).children('img');
+			var newImgWidth = $newImg.width();
+			var selisih;
+
+			if (newImgWidth > itemWidth) {
+				selisih = newImgWidth - itemWidth;
+				margin = selisih/2 * (-1);
+				$img.css({
+					'margin-left': margin
+				});
+			};
+
+		} else {
+
+			// set image width full box
 			$img.width(itemWidth);
-			//$img.height(itemWidth/imgRatio);
-			$img.height(itemHeight);
 
-		} else
-		// Jika lebih tinggi maka 
-		// tinggignyad desesuiakan dengan box
-		if ((imgWidth/imgHeight) <= ratio) {
-			$img.height(itemHeight);
-			$img.width(itemHeight/imgRatio);
-		};
+			var $newImg = $(this).children('img');
+			var newImgHeight = $newImg.height();
+			var selisih;
+
+			if (newImgHeight > itemHeight) {
+				selisih = newImgHeight - itemHeight;
+				margin = selisih/2 * (-1);
+				$img.css({
+					'margin-top': margin
+				});
+			};
+		}
 
 	})
 });

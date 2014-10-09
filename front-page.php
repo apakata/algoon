@@ -31,7 +31,7 @@ get_header(); ?>
 				} else {
 
 					// Get first image from content post
-					echo "<img src='".algoon_first_img()."' class='img-responsive' alt='' />";
+					echo "<img src='".algoon_first_img()."' alt='' />";
 				}
 	
 				?> 
