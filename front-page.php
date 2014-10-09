@@ -49,7 +49,7 @@ get_header(); ?>
 		<?php 
 			endwhile;
 			
-			algoon_paging_nav();
+			//algoon_paging_nav();
 		else :
 			// If no content, include the "No posts found" template.
 			get_template_part( 'content', 'none' );
@@ -63,8 +63,8 @@ get_header(); ?>
 </div>
 
 <div class="paging">
-	<?php ?>
-	<ul class="pagination">
+	<?php wp_pagenavi(); ?>
+	<!-- <ul class="pagination">
 		<li class="disabled"><a href="#">Previous</a></li>
 		<li class="active"><a href="#">1</a></li>
 		<li><a href="#">2</a></li>
@@ -72,7 +72,7 @@ get_header(); ?>
 		<li><a href="#">4</a></li>
 		<li><a href="#">5</a></li>
 		<li><a href="#">Next</a></li>
-	</ul>
+	</ul> -->
 </div>
 
 <?php get_footer(); ?>
