@@ -42,6 +42,8 @@ $(function() {
 
 		$(this).height(itemHeight);
 
+		$img.show();
+
 		if ((imgWidth/imgHeight) > ratio) {
 
 			// set image height full box
@@ -57,6 +59,7 @@ $(function() {
 				$img.css({
 					'margin-left': margin
 				});
+
 			};
 
 		} else {
