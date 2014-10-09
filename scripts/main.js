@@ -54,8 +54,8 @@ $(function() {
 
 			console.log(imgWidth);
 			$img.width(itemWidth);
-			$img.height(itemWidth/imgRatio);
-			
+			//$img.height(itemWidth/imgRatio);
+			$img.height(itemHeight);
 
 		} else
 		// Jika lebih tinggi maka 

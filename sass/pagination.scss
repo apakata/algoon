@@ -1,65 +1,8 @@
 .paging {
-
 	position: fixed;
 	right: 0px;
 	bottom: 8px;
 	width: auto;
-
-	.pagination {
-
-		margin: 0px 0px -5px 0px;
-
-		& > .active {
-			& > a,
-			& > span,
-			& > a:hover,
-			& > span:hover,
-			& > a:focus,
-			& > span:focus {
-				background-color: #222222;
-				
-				border-right-color: #333;
-				border-left-color: #333;
-				border-top-color: #222;
-				border-bottom-color:#222;
-				color: #FFFFFF;
-			}
-		}
-
-		& > .disabled {
-			& > a,
-			& > span,
-			& > a:hover,
-			& > span:hover,
-			& > a:focus,
-			& > span:focus {
-				color: #777 !important;
-			}
-		}
-
-		& > li {
-			& > a, 
-			& > span {
-				color: #333333;
-			}
-
-			&:last-child > a,
-			&:last-child > span {
-				background-color: #222222;
-				border-color: #222222;
-				color: #FFFFFF;
-				border-radius: 0px;
-			}
-
-			&:first-child > a,
-			&:first-child > span {
-				background-color: #222222;
-				border-color: #222222;
-				color: #FFFFFF;
-				border-radius: 0px;
-			}
-		}
-	}
 }
 
 .wp-pagenavi {
@@ -70,39 +13,32 @@
 	.first {
 		background-color: #111111;
 		padding: 10px;
-			color: #FFF;
-
-		
+		color: #FFF;
 	}
 
 	.last {
 		background-color: #111111;
 		padding: 10px;
-			color: #FFF;
-
-		
+		color: #FFF;
 	}
 
 	.previouspostslink {
 		background-color: #111111;
 		padding: 10px;
-			color: #FFF;
+		color: #FFF;
 
 	}
 
 	.nextpostslink {
 		background-color: #111111;
 		padding: 10px;
-			color: #FFF;
-
+		color: #FFF;
 	}
 
 	.extend {
 		padding: 10px;
-			background-color: #CCCCCC;
-
-			color: #000000;
-
+		background-color: #CCCCCC;
+		color: #000000;
 	}
 
 	.page {
@@ -116,7 +52,6 @@
 			background-color: #FFFFFF;
 			padding: 10px;
 			color: #000000;
-
 		}
 	}
 
