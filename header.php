@@ -56,17 +56,17 @@
 						<div class="row text-center sosmed">
 							<div class="col-xs-4">
 								<a href="#">
-									<span class="glyphicon glyphicon-adjust item"></span>
+									<img src="<?php echo get_option('algoon_sosmed_1'); ?>" class="img-responsive">
 								</a>
 							</div>
 							<div class="col-xs-4">
 								<a href="#">
-								<span class="glyphicon glyphicon-pause item"></span>
+									<img src="<?php echo get_option('algoon_sosmed_2'); ?>" class="img-responsive">
 								</a>
 							</div>
 							<div class="col-xs-4">
 								<a href="#">
-								<span class="glyphicon glyphicon-resize-full item"></span>
+									<img src="<?php echo get_option('algoon_sosmed_3'); ?>" class="img-responsive">
 								</a>
 							</div>
 						</div>
