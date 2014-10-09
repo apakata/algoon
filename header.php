@@ -33,7 +33,7 @@
 						<div class="row header">
 							<div class="col-md-3">
 								<a href="<?php echo get_option('home'); ?>">
-								<span class="glyphicon glyphicon-search logo"></span>
+								<img src="<?php echo get_option('algoon_logo'); ?>" class="img-responsive">
 								</a>
 							</div>
 							<div class="col-md-9 logo-title">
