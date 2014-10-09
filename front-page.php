@@ -58,7 +58,7 @@ get_header(); ?>
 		// Special wordpress loop
 		// /End
 		// 
-		//wp_reset_postdata(); ?>
+		wp_reset_postdata(); ?>
 
 	</div>
 </div>

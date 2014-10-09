@@ -1,7 +1,12 @@
+$paging-pading: 6px;
+$paging-color-1: #111111;
+$paging-color-2: #FFFFFF;
+$paging-color-3: #CCCCCC;
+
 .paging {
 	position: fixed;
 	right: 0px;
-	bottom: 8px;
+	bottom: 4px;
 	width: auto;
 }
 
@@ -10,54 +15,33 @@
 		display: none;
 	}
 
-	.first {
-		background-color: #111111;
-		padding: 10px;
-		color: #FFF;
-	}
-
-	.last {
-		background-color: #111111;
-		padding: 10px;
-		color: #FFF;
-	}
-
-	.previouspostslink {
-		background-color: #111111;
-		padding: 10px;
-		color: #FFF;
-
-	}
-
+	.first,
+	.last,
+	.previouspostslink,
 	.nextpostslink {
-		background-color: #111111;
-		padding: 10px;
-		color: #FFF;
+		background-color: $paging-color-1;
+		padding: $paging-pading;
+		color: $paging-color-2;
 	}
 
 	.extend {
-		padding: 10px;
-		background-color: #CCCCCC;
+		padding: $paging-pading;
+		background-color: $paging-color-3;
 		color: #000000;
 	}
 
 	.page {
-		&.smaller {
-			background-color: #FFFFFF;
-			padding: 10px;
-			color: #000000;
-		}
-
+		&.smaller,
 		&.larger {
-			background-color: #FFFFFF;
-			padding: 10px;
+			background-color: $paging-color-2;
+			padding: $paging-pading;
 			color: #000000;
 		}
 	}
 
 	.current {
-		background-color: #CCCCCC;
-		padding: 10px;
+		background-color: $paging-color-3;
+		padding: $paging-pading;
 		color: #000000;
 		font-weight: bold;
 	}
