@@ -1,0 +1,35 @@
+.widget {
+	color: #FFFFFF;
+
+	.sidewidget {
+		border: 1px solid #CCCCCC;
+		padding: 10px 15px;
+		margin: 15px 5px;
+		background-color: #777777;
+
+		ul {
+			padding-left: 0;
+			list-style: none;
+
+			& > li {
+				display: block;
+				background-color: #CCCCCC;
+				padding: 3px 10px;
+				border-bottom: 1px solid #555555;
+
+				& > a {
+					color: #FFFFFF;
+				}
+
+				.post-date {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+
+	h3 {
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+}
