@@ -3,13 +3,14 @@
 
 	.sidewidget {
 		border: 1px solid #CCCCCC;
-		padding: 10px 15px;
+		padding: 10px 0px 0px 0px;
 		margin: 15px 5px;
 		background-color: #777777;
 
 		ul {
 			padding-left: 0;
 			list-style: none;
+			margin-bottom: 0px;
 
 			& > li {
 				display: block;
@@ -18,7 +19,7 @@
 				border-bottom: 1px solid #555555;
 
 				& > a {
-					color: #FFFFFF;
+					color: #000;
 				}
 
 				.post-date {
@@ -31,5 +32,6 @@
 	h3 {
 		margin-top: 0px;
 		margin-bottom: 10px;
+		padding: 0px 10px 0 10px;
 	}
 }

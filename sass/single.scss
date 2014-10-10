@@ -4,24 +4,3 @@
 	margin: 0 10px 5px 0px;
 }
 
-.sidewidget {
-	ul {
-		padding-left: 0;
-		list-style: none;
-
-		& > li {
-			display: block;
-			background-color: #CCCCCC;
-			padding: 3px 10px;
-			border-bottom: 1px solid #555555;
-
-			& > a {
-				color: #FFFFFF;
-			}
-
-			.post-date {
-				font-size: 10px;
-			}
-		}
-	}
-}
