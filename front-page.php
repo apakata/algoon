@@ -37,12 +37,12 @@ get_header(); ?>
 	
 				?> 
 			<div class="text text-center">
-				<?php the_title('<h3>','</h3>'); ?>
+				<?php the_title('<p>','</p>'); ?>
 			</div>
 
 			<div class="title text-center">
 				<a href="<?php esc_url( the_permalink() ); ?>">
-					<?php the_title('<h3>','</h3>'); ?>
+					<?php the_title('<p>','</p>'); ?>
 				</a>
 			</div>
 		</div>
