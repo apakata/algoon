@@ -4,3 +4,11 @@
 	margin: 0 10px 5px 0px;
 }
 
+.single {
+
+	padding-left: $menu-toggle-width;
+
+	.content {
+		padding-top: 15px;
+	}
+}

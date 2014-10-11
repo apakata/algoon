@@ -5,12 +5,12 @@
  */
 get_header(); ?>
 
-<div class="container-fluid movies">
+<div class="container-fluid single">
 	<div class="row">
 		<div class="col-md-3">
 			<?php get_sidebar('left'); ?>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-6 content">
 			
 		<?php
 		// Start the Loop.
