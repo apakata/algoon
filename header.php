@@ -46,9 +46,9 @@
 						<!-- Search Box -->
 						<div class="row search">
 							<div class="col-md-12">
-								<form>
-									<input class="form-control" type="text" placeholder="Search Box">
-								</form>
+								
+
+								<?php get_search_form(); ?>
 							</div>
 						</div>
 
